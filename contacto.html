@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/75f5766883.js" 
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="index.html">Muebles Hermanos</a>
+            <nav>
+                <a href="index.html#Somos-fabricantes">Quiénes somos</a>
+                <a href="productos.html">Nuestos productos</a>
+                <a href="contacto.html">Contáctenos</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="contacto">
+        <h2 class="titulo">Contacte con <span>Nosotros</span></h2>
+
+        <div class="contacto-container">
+            <div class="contacto-formulario">
+                <h3>Contáctenos</h3>
+                <form action="https://formsubmit.co/1muebleshermanos@gmail.com" method="POST">
+                    <p>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required
+                        pattern="[a-z]{1,30}">
+                    </p>
+                    <p>
+                        <label for="nameproduct">Nombre del Producto</label>
+                        <input type="text" name="nameproduct" id="nameproduct" placeholder="Nombre del Producto">
+                    </p>
+                    <p>
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" id="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}"
+                         placeholder="Telefono" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </p>
+                    <p class="block">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="mess" cols="30" rows="4" placeholder="Escriba su Mensaje aqui" required></textarea>
+                    </p>
+                    <p class="block">
+                        <input class="btn" type="submit" value="Enviar">
+                    </p>
+                    
+                </form>
+
+            </div>
+
+            <div class="contacto-info">
+                <h3>Mas Información</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Río Hondo 746, Tuxtla Gutiérrez Chiapas</li>
+                    <li><i class="fa-solid fa-phone"></i> 961 375 5489</li>
+                    <li><i class="fa-solid fa-envelope"></i> 1MueblesHermanos@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia quasi inventore
+                     dolorem nulla. Earum distinctio at perspiciatis incidunt? Animi rerum amet accusamus quaerat
+                      reiciendis asperiores molestias assumenda sit vero.</p>
+                
+                <p>
+                    <a href="index.html">MueblesHermanos.com.mx</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.003777796412!2d-93.11071213043333!3d16.
+            77592378302947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd8bc88450a45%3A0xb806c5293667e08a!2sR%C
+            3%ADo%20Hondo%20746.746B%2C%20Albania%20Alta%2C%2029010%20Tuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1ses-419!2
+            smx!4v1688797019968!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+
+    </div>
+
+    <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a>
+                            <img src="images/logo-prototipo.png" alt="Logo Muebles Hermanos">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>CONTACTANOS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Aperiam itaque quas sunt asperiores eligendi a saepe </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Aperiam itaque quas sunt asperiores </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Muebles Hermanos</b> - Todos los derechos reservados</small>
+            </div>
+        
+    </footer>
+
+</body>
+
+</html>
