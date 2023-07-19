@@ -23,17 +23,16 @@ img{
     max-width: 100%;
 }
 
-h1{ font-size: 3.5em; }
-h2{ font-size: 2.5em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
+h1{ font-size: 5em;}
+h2{ font-size: 4em;}
+h3{ font-size: 3em;}
+p{ font-size: 2em;}
 ul{ list-style: none;}
-li{ font-size: 1.25em;}
+li{ font-size: 2em;}
 
 button{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5em;
-    
+    font-size: 2em;
     padding: 10px 30px;
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.5);
@@ -54,11 +53,14 @@ button:hover{
     margin: auto;
 }
 
-.color-acento{ color: var(--color-primario);}
+.color-acento{ 
+    color: var(--color-primario);
+}
 
 header{
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-secundario);
+    height:auto;
 }
 
 header .logo{
@@ -66,7 +68,7 @@ header .logo{
     padding: 25px 30px;
     font-weight: bold;
     color: var(--color-primario);
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 header .container{
@@ -88,6 +90,7 @@ header a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+    font-size: 2em;
 }
 
 header .logo:hover{
@@ -104,7 +107,7 @@ header nav a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -112,9 +115,8 @@ header nav a:hover{
     )
     ,url("/images/hero.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-
 }
 
 #hero h1{
@@ -122,7 +124,7 @@ header nav a:hover{
 }
 
 #hero button{
-    font-size: 1.75em;
+    font-size: 5vw;
 }
 
 #Somos-fabricantes .container{
@@ -147,17 +149,27 @@ header nav a:hover{
     background-color: rgb(30, 30, 30);
     color: var(--color-secundario);
     text-align: center;
+    height: auto;
 }
 
 #nuestros-productos .container{
     text-align: center;
-    padding: 50px 0px;
+    padding: 10%;
+}
+
+#nuestros-productos .container .productos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 80px;
 }
 
 #nuestros-productos h2{
     margin-top: 0;
-    margin-bottom: 35px;
-    font-size: 3em;
+    margin-bottom: 10%;
+}
+
+#nuestros-productos h3{
+    margin: 30px;
 }
 
 #nuestros-productos p{
@@ -167,9 +179,10 @@ header nav a:hover{
 #nuestros-productos .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 40px;
-    border-radius: 10px;
+    min-height: 300px;
+    padding: 7%;
+    margin: 0;
+    border-radius: 20px;
 }
 
 .carta:first-child{
@@ -179,7 +192,6 @@ header nav a:hover{
         rgba(0,0,0,0.5)
     )
     ,url(/images/escritorios.jpg)
-
 }
 
 .carta:nth-child(2){
@@ -189,7 +201,6 @@ header nav a:hover{
         rgba(0,0,0,0.5)
     )
     ,url(/images/mesas.jpg)
-
 }
 
 .carta:nth-child(3){
@@ -208,6 +219,7 @@ header nav a:hover{
 #porque-elegirnos .container{
     text-align: center;
     padding: 10%;
+    height: auto;
 }
 
 #porque-elegirnos .texto{
@@ -228,25 +240,6 @@ header nav a:hover{
     max-width: 400px;
 }
 
-#llamado{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: var(--color-secundario);
-    height: 70vh;
-}
-
-#llamado h2{
-    font-size: 9vw;
-}
-
-#llamado button{
-    font-size: 5vw;
-}
-
 .pie-pagina{
     font-family: 'Roboto', sans-serif;
     background-color: rgb(210, 210, 210);
@@ -254,9 +247,8 @@ header nav a:hover{
 }
 
 .pie-pagina .grupo-1{
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    grid-gap: 80px;
     padding: 15px 10px;
     text-align: center center;
 }
@@ -281,27 +273,31 @@ header nav a:hover{
 }
 
 .pie-pagina .grupo-1 .box p{
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 30px;
+    font-size: .8em;
     text-align: center;
-}
-
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: var(--color-secundario);
-    margin-right: 10px;
-    background-color: var(--color-primario);
-    text-align: center;
-    border-radius: 10px;
-    justify-items: center;
 }
 
 .pie-pagina .grupo-1 .red-social{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
     text-align: center;
+    justify-items: center;
+    margin: 4% auto;
+    width: 40%;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    font-size: 2em;
+    text-decoration: none;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    text-align: center;
+    border-radius: 10px;
 }
 
 .pie-pagina .grupo-1 .red-social a:hover{
@@ -309,8 +305,9 @@ header nav a:hover{
 }
 
 .pie-pagina .grupo-2{
+    font-size: 1em;
     background-color: rgba(103, 105, 107, 0.671);
-    padding: 15px 10px;
+    padding: 4%;
     text-align: center;
     color: var(--color-secundario);
 }
@@ -322,17 +319,27 @@ header nav a:hover{
     background-color: rgb(30, 30, 30);
     color: var(--color-secundario);
     text-align: center;
+    height: auto;
 }
 
 #all-productos .container{
     text-align: center;
-    padding: 50px 0px;
+    padding: 10%;   
+}
+
+#all-productos .container .productos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 80px;
 }
 
 #all-productos h2{
     margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 2em;
+    margin-bottom: 10%;
+}
+
+#all-productos h3{
+    margin: 30px;
 }
 
 #all-productos p{
@@ -343,8 +350,8 @@ header nav a:hover{
     background-position: center center;
     background-size: cover;
     min-height: 300px;
-    padding: 50px;
-    margin: 50px;
+    padding: 7%;
+    margin: 0;
     border-radius: 20px;
 }
 
@@ -433,18 +440,14 @@ header nav a:hover{
 .contacto h2{
     margin: 0%;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 1em;
-}
-
-.contacto span{
-    color: var(--color-primario);
 }
 
 .contacto h3{
     margin: 0%;
     padding: 1em;
-    font-size: 1.5em;
+    font-size: 3em;
 }
 
 .contacto h3,
@@ -552,7 +555,27 @@ header nav a:hover{
 
 /*------------------------------Versión PC--------------------------*/
 
-@media (min-width: 1100px){
+@media (min-width: 1080px){
+
+    h1{ font-size: 3.5em; }
+    h2{ font-size: 2.5em;}
+    h3{ font-size: 2em;}
+    p{ font-size: 1.25em;}
+    ul{ list-style: none;}
+    li{ font-size: 1.25em;}
+
+    header .logo{
+        font-size: 1.5em;
+    }
+
+    header a{
+        font-size: 1em;
+    }
+
+    button{
+        font-size: 1em;
+    }
+
     header{
         position: fixed;
         width: 100%
@@ -577,9 +600,18 @@ header nav a:hover{
         font-size: 5em;
     }
 
+    #hero button{
+        font-size: 2em;
+    }
+
     #Somos-fabricantes .container{
         display: flex;
         justify-content: space-evenly;
+        padding: 8%;
+    }
+
+    #Somos-fabricantes{
+        height: 100vh;
     }
 
     #Somos-fabricantes .texto{
@@ -592,10 +624,6 @@ header nav a:hover{
         justify-content: center;
     }
 
-    #Somos-fabricantes h2{
-        margin-top: 0px;
-    }
-
     #Somos-fabricantes .image-container{
         background-image: url("/images/fabrica.jpg");
         box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
@@ -605,38 +633,31 @@ header nav a:hover{
         width: 400px;
     }
 
-    #nuestros-productos .productos{
-        display: flex;
-        justify-content: center;
+    #nuestros-productos{
+        height: auto;
+    }
+
+    #nuestros-productos .container{
+        padding: 4% 8% 8% 8%;
+    }
+
+    #nuestros-productos .container .productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 80px;
     }
 
     #nuestros-productos p{
         display: block;
-        margin-bottom: 30px;
     }
 
     #nuestros-productos h2{
-        font-size: 4em;
-    }
-
-    #nuestros-productos h3{
-        margin-top: 0;
+        margin-bottom: 4%;
     }
 
     #nuestros-productos .carta{
         padding: 30px;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        margin: 25px;
-    }
-
-    #nuestros-productos .carta:first-child{
-        margin-left: 15%;
-        
-    }
-
-    #nuestros-productos .carta:nth-child(3){
-        margin-right: 15%;
-        
     }
 
     #porque-elegirnos .container{
@@ -667,52 +688,72 @@ header nav a:hover{
         justify-content: center;
     }
 
-    #llamado h2{
-        font-size: 5em;
-    }
-
-    #llamado button{
-        font-size: 2em;
-    }
-
     .pie-pagina .grupo-1{
         width: 100%;
         max-width: 1200px;
-        margin: auto;
+        margin: 10px auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         padding: 45px 0px;
     }
 
+    .pie-pagina .grupo-1 .box p{
+        font-size: 15px;
+    }
+
+    .pie-pagina .grupo-1 .red-social{
+        margin: 4% auto;
+        width: 60%;
+    }
+
+    .pie-pagina .grupo-1 .red-social a{
+        font-size: 1em;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .pie-pagina .grupo-2{
+        padding: 1%;
+    }
+    
 
     /*-------------------------Productos---------------------------*/
-    
-    #all-productos .container{
+
+    #all-productos .container h2{
+        margin-bottom: 50px;
+    }
+
+    #all-productos .container{   
         text-align: center;
-        padding: 120px 0px;
+        padding: 12% 10% 10% 10%;
+    }
+    
+    #all-productos .container .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+        grid-gap: 40px;
     }
 
     #all-productos p{
-        display: block;
+        display: flex;
         margin-bottom: 30px;
     }
 
     #all-productos h2{
         margin-top: 0;
         margin-bottom: 0px;
-        font-size: 2em;
     }
 
     #all-productos .carta{
         background-position: center center;
         background-size: cover;
-        min-height: 300px;
+        min-height: 400px;
         padding: 50px;
-        margin: 50px;
+        margin: 0;
         border-radius: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 
 
@@ -737,6 +778,10 @@ header nav a:hover{
 
     .contacto-info{
         border-radius: 0px 10px 10px 0px;
+    }
+
+    .contacto h3{
+        font-size: 2em;
     }
 
     .contacto-info h3,
